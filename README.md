@@ -3,7 +3,7 @@
 SouthNode is a Node.js wrapper for the Southpine Player API.
 
 ## Installing
-Simply run: `npm install southnode`.
+Simply run: `npm install southnode`. (coming soon)
 
 ## Building
 0. Install Node
