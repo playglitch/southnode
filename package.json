@@ -1,0 +1,40 @@
+{
+  "name": "southnode",
+  "version": "0.1.0",
+  "description": "A Node.js wrapper for the Southpine Player API",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doamatto/southnode.git"
+  },
+  "keywords": [
+    "api",
+    "southpine",
+    "wrapper"
+  ],
+  "author": "doamatto <hello@doamatto.xyz> (https://doamatto.xyz)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/doamatto/southnode/issues"
+  },
+  "homepage": "https://github.com/doamatto/southnode#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "git+https://github.com/flaganalytics/gulp-eslint.git"
+  }
+}
