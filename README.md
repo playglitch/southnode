@@ -13,7 +13,7 @@ Simply run: `npm install southnode`. (coming soon)
 4. Profit.
 
 ## Usage
-[For usage information, read the Wiki](https://github.com/doamatto/southnode/wiki/Usage).
+[For usage information, read the Wiki](https://github.com/doamatto/southnode/wiki/Usage). For usage examples, look inside of `examples/`.
 
 ## Acknowledgements
 
