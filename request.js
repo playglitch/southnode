@@ -6,6 +6,7 @@ module.exports = class Request {
   }
 
   async send(args, params) {
+    if(args == "") return throw new Error("[ERROR] No method was provided (profile, miniProfile, lobby).");
     if(params == "") return throw new Error("[ERROR] No parameter(s) was/were provided (username, lobby ID, authentication token).");
     var res = await fetch(this.createUrl(args, params))
     var data = await res.json()
