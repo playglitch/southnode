@@ -1,40 +1,49 @@
 const fetch = require('node-fetch');
+const {Error, Warning, CritError} = require('./errorhandling.js');
+const flgs = process.argv.slice(2); // For handling verbosity
 
 module.exports = class Request {
   constructor() {
     this.baseURL = "https://southpine.playglitch.xyz/";
   }
 
+  ensureVerbose() {
+    if(flgs !== "verbose")
+      return throw new Warning("")
+  }
+
   async send(args, params) {
-    if(args == "") return throw new Error("[ERROR] No method was provided (profile, miniProfile, lobby).");
-    if(params == "") return throw new Error("[ERROR] No parameter(s) was/were provided (username, lobby ID, authentication token).");
+    if(args == "")
+      return throw new Error("No method was provided (profile, miniProfile, lobby).");
+    if(params == "")
+      return throw new Error("No parameter(s) was/were provided (username, lobby ID, authentication token).");
     var res = await fetch(this.createUrl(args, params))
     var data = await res.json()
     if(res.status !== 200) {
       switch(res.status) {
         case 401:
           throw new Error(
-            "[ERROR] The user or lobby you requested has a private profile."
+            "The user or lobby you requested has a private profile."
           );
           break;
         case 403:
           throw new Error(
-            "[ERROR] The user or lobby you requested has a private profile."
+            "The user or lobby you requested has a private profile."
           );
           break;
         case 404:
           throw new Error(
-            "[ERROR] The user or lobby you requested doesn't exist."
+            "The user or lobby you requested doesn't exist."
           );
           break;
         case 500:
           throw new Error(
-            "[ERROR] The API server is either not responding or is down."
+            "The API server is either not responding or is down."
           );
           break;
         default:
-          throw new Error(
-            `[CRITICAL ERROR] Unknown error. Please report this issue on GitHub at
+          throw new CritError(
+            `Unknown error. Please report this issue on GitHub at
             https://github.com/doamatto/southnode/issues/new/`
           );
           break;
