@@ -11,23 +11,29 @@ module.exports = class Request {
     if(res.status !== 200) {
       switch(res.status) {
         case 401:
-          console.error(
+          throw new Error(
             "The user or lobby you requested has a private profile."
           );
           break;
         case 403:
-          console.error(
+          throw new Error(
             "The user or lobby you requested has a private profile."
           );
           break;
         case 404:
-          console.error(
+          throw new Error(
             "The user or lobby you requested doesn't exist."
           );
           break;
         case 500:
-          console.error(
+          throw new Error(
             "The API server is either not responding or is down."
+          );
+          break;
+        default:
+          throw new Error(
+            `Unknown error. Please report this issue on GitHub at
+            https://github.com/doamatto/southnode/issues/new/`
           );
           break;
       }
