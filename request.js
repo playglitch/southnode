@@ -6,6 +6,7 @@ module.exports = class Request {
   }
 
   async send(args, params) {
+    if(params == "") return throw new Error("[ERROR] No parameters were provided (username, lobby ID, authentication token).");
     var res = await fetch(this.createUrl(args, params))
     var data = await res.json()
     if(res.status !== 200) {
