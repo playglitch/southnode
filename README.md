@@ -1,6 +1,6 @@
 # SouthNode
 
-SouthNode is a Node.js wrapper for the Southpine Player API.
+SouthNode is a Node.js wrapper for the Southpine Player API. Data is handled per [this privacy statement.](https://doamatto.xyz/privacy/southpine-wrappers/)
 
 ## Installing
 Simply run: `npm install southnode`. (coming soon)
