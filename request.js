@@ -12,27 +12,27 @@ module.exports = class Request {
       switch(res.status) {
         case 401:
           throw new Error(
-            "The user or lobby you requested has a private profile."
+            "[ERROR] The user or lobby you requested has a private profile."
           );
           break;
         case 403:
           throw new Error(
-            "The user or lobby you requested has a private profile."
+            "[ERROR] The user or lobby you requested has a private profile."
           );
           break;
         case 404:
           throw new Error(
-            "The user or lobby you requested doesn't exist."
+            "[ERROR] The user or lobby you requested doesn't exist."
           );
           break;
         case 500:
           throw new Error(
-            "The API server is either not responding or is down."
+            "[ERROR] The API server is either not responding or is down."
           );
           break;
         default:
           throw new Error(
-            `Unknown error. Please report this issue on GitHub at
+            `[CRITICAL ERROR] Unknown error. Please report this issue on GitHub at
             https://github.com/doamatto/southnode/issues/new/`
           );
           break;
