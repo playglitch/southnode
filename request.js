@@ -54,7 +54,7 @@ module.exports = class Request {
   createUrl (args, params) {
     const URL = require('url').URL;
     const url = new URL(this.baseURL);
-    url.pathname += `?${args.filter(a=>a).join("/")}`
+    url.pathname += `/${args.filter(a=>a).join("/")}`
     for (let p in params) {
       url.searchParams.set(p, params[p]);
     }
