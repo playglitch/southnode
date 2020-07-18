@@ -1,9 +1,9 @@
-const southnode = require('..');
-const sn = new southnode();
+const Southnode = require('..');
+const sn = new Southnode();
 
-var data_in = "doamatto"; // A username example
+var dataIn = "doamatto"; // A username example
 
-sn.miniProfile(data_in)
+sn.miniProfile(dataIn)
   .then(res => {
     return console.log(res);
   })
