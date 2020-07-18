@@ -14,7 +14,7 @@ You can use the vanilla JavaScript version with these libraries or by [downloadi
 0. Install Node
 1. Install dependencies (`npm i`)
 2. Double-check for issues (`gulp`)
-3. Build with the power of Webpack (`npm build`)
+3. Build with the power of Webpack (`npm run-script build`)
 4. ???
 5. Profit.
 
