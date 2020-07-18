@@ -9,10 +9,10 @@ module.exports = {
   },
   module: {
     rules: [{
-      enforce: pre,
+      enforce: "pre",
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      use: eslint-loader
+      use: "eslint-loader"
     }]
   }
 };
