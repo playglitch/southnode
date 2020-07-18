@@ -9,7 +9,7 @@ module.exports = class Request {
 
   ensureVerbose() {
     if(flgs !== "verbose")
-      return throw new Warning("")
+      return throw new Warning("");
   }
 
   async send(args, params) {
