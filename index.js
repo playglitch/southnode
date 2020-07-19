@@ -23,7 +23,7 @@ module.exports = class SouthNode {
 
   /**
   * @param {string} lobby's ID
-  * @param {string} Lobby host's auth token
+  * @param {string} Lobby host's auth token, optional
   */
   async lobby (lobbyid, authToken) {
     return await this.request.send(['lobby', lobbyid, authToken])
