@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const { Error, Warning, CritError } = require('./errorhandling.js');
+const { Error, Warning, CritError } = require('./errorhandling');
 const flgs = process.argv.slice(2); // For handling verbosity
 
 module.exports = class Request {
