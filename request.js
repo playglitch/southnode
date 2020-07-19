@@ -57,9 +57,13 @@ module.exports = class Request {
       ) : throw Error(
         "No parameter(s) was/were provided (username, lobby ID, authentication token)."
       );
-    url.pathname += `/${args.filter(a=>a).join("/")}`
-    for (let p in params) {
-      url.searchParams.set(p, params[p]);
+    try {
+      url.pathname += `/${args.filter(a=>a).join("/")}`
+      for (let p in params) {
+        url.searchParams.set(p, params[p]);
+      }
+    } catch (e) {
+      return throw Error(`There was an issue when creating the request URL. Error: ${e}`);
     }
     return url.href;
   }
