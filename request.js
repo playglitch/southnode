@@ -14,8 +14,6 @@ module.exports = class Request {
   }
 
   async send(args, params) {
-    console.log(args);
-    console.log(params);
     if (args === "")
       throw this.log.Error("No method was provided (profile, miniProfile, lobby).");
     if(params === "")
