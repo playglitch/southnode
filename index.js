@@ -3,8 +3,8 @@
 const Request = require('./request')
 
 module.exports = class SouthNode {
-  construct () {
-    this.request = new Request()
+  constructor() {
+    this.request = new Request
   }
 
   /**
