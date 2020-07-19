@@ -4,7 +4,7 @@ const flgs = process.argv.slice(2); // For handling verbosity
 
 module.exports = class Request {
   constructor() {
-    this.baseURL = "https://southpine.playglitch.xyz/";
+    this.baseURL = "https://southpine.playglitch.xyz/api";
     this.log = new ErrorHandling;
   }
 
