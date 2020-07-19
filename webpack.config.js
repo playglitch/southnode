@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: "production",
+  mode: 'production',
   entry: './index.js',
   output: {
     filename: 'south.js',
@@ -9,10 +9,13 @@ module.exports = {
   },
   module: {
     rules: [{
-      enforce: "pre",
+      enforce: 'pre',
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      use: "eslint-loader"
+      loader: 'eslint-loader',
+      options: {
+        fix: true
+      }
     }]
   }
 };
