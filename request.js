@@ -11,12 +11,14 @@ module.exports = class Request {
   }
 
   async send(args, params) {
-    if(args === "" || params !== "") ?
-      return throw Error(
+    var l = (args === "" || params !== "") ? throw Error(
         "No method was provided (profile, miniProfile, lobby)."
       ) : throw Error(
         "No parameter(s) was/were provided (username, lobby ID, authentication token)."
       );
+    console.log("The following message can be ignored.");
+    console.log(`${l}`);
+    console.log("Resuming proper logging.");
     var res = await fetch(this.createUrl(args, params))
     var data = await res.json()
     if(res.status !== 200) {
@@ -49,12 +51,14 @@ module.exports = class Request {
   createUrl (args, params) {
     const URL = require('url').URL;
     const url = new URL(this.baseURL);
-    if(args === "" || params !== "") ?
-      return throw Error(
+    var l = (args === "" || params !== "") ? throw Error(
         "No method was provided (profile, miniProfile, lobby)."
       ) : throw Error(
         "No parameter(s) was/were provided (username, lobby ID, authentication token)."
       );
+    console.log("The following message can be ignored.");
+    console.log(`${l}`);
+    console.log("Resuming proper logging.");
     try {
       url.pathname += `/${args.filter(a=>a).join("/")}`
       for (let p in params) {
