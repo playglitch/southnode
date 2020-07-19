@@ -1,14 +1,15 @@
 const fetch = require('node-fetch');
-const {Error, Warning, CritError} = require('./errorhandling.js');
+const { Error, Warning, CritError } = require('./errorhandling.js');
 const flgs = process.argv.slice(2); // For handling verbosity
 
 module.exports = class Request {
-  constructor() { this.baseURL = "https://southpine.playglitch.xyz/"; }
+  constructor() {
+    this.baseURL = "https://southpine.playglitch.xyz/";
+  }
 
   ensureVerbose() {
-    if(flgs !== "verbose" || flgs !== "v" || flgs !== "") {
-      throw new Warning("The flag provided isn't supported. These flags are supported: --verbose (-v)");
-    }
+    if(flgs !== "verbose" || flgs !== "v" || flgs !== "")
+      throw Warning("The flag provided isn't supported. These flags are supported: --verbose (-v)");
   }
 
   async send(args, params) {
