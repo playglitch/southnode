@@ -1,5 +1,5 @@
 # SouthNode
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdoamatto%2Fsouthnode.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdoamatto%2Fsouthnode?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdoamatto%2Fsouthnode.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdoamatto%2Fsouthnode?ref=badge_shield)![Lint Test Results](https://github.com/doamatto/southnode/workflows/lint/badge.svg)![Build Test Results](https://github.com/doamatto/southnode/workflows/build-test/badge.svg)
 
 
 SouthJS is a Node.js and JavaScript (with the power of Webpack) wrapper for the Southpine Player API. Data is handled per [this privacy statement.](https://doamatto.xyz/privacy/southpine-wrappers/)
