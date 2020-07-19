@@ -1,6 +1,6 @@
 'use strict'
 
-const Request = './request'
+const Request = require('./request')
 
 module.exports = class SouthNode {
   construct () {
