@@ -8,8 +8,8 @@ SouthJS is a Node.js and JavaScript (with the power of Webpack) wrapper for the 
 Simply run: `npm install southnode`. (coming soon)
 
 You can use the vanilla JavaScript version with these libraries or by [downloading a release](https://github.com/doamatto/southnode/releases/latest):
-- RawGit CDN: `https://ghcdn.rawgit.org/doamatto/southnode/v0.1.0/dist/south.js`
-- jsDelivr CDN: `https://cdn.jsdelivr.net/gh/doamatto/southnode@v0.1.0/dist/south.js`
+- RawGit CDN: `https://ghcdn.rawgit.org/playglitch/southnode/v0.1.0/dist/south.js`
+- jsDelivr CDN: `https://cdn.jsdelivr.net/gh/playglitch/southnode@v0.1.0/dist/south.js`
 - doamatto CDN: `https://cdn.doamatto.xyz/southnode/v0.1.0/dist/south.js`
 
 ## Building
@@ -21,11 +21,11 @@ You can use the vanilla JavaScript version with these libraries or by [downloadi
 5. Profit.
 
 ## Usage
-[For usage information, read the Wiki](https://github.com/doamatto/southnode/wiki/Usage). For usage examples, look inside of `examples/`.
+[For usage information, read the Wiki](https://github.com/playglitch/southnode/wiki/Usage). For usage examples, look inside of `examples/`.
 
 ## Acknowledgements
 
-This uses endpoints on Glitch's servers, meaning you're getting the most accurate data (since Glitch is the developers of Southpine).
+This tool is maintained and originally developed by [doamatto](https://doamatto.xyz). This uses endpoints on Glitch's servers, meaning you're getting the most accurate data (since Glitch is the developers of Southpine).
 
 
 ## License
