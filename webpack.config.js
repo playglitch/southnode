@@ -8,8 +8,8 @@ module.exports = {
     filename: 'south.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  resolve {
-    fallback {
+  resolve: {
+    fallback: {
       url: require.resolve("url/")
     }
   },
